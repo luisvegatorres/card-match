@@ -4,10 +4,21 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Card Match</title>
+  <link rel="stylesheet" href="./dist/styles.css" />
+  <script type="module" src="./dist/main.js" defer></script>
 </head>
 <body>
   <main class="game">
-    
+    <header class="game__header">
+      <h1>Card Match</h1>
+      <p class="game__status">
+        Attempts Left: <span id="attempts">3</span>
+      </p>
+      <p class="game__message" id="message">Find all 3 pairs in 3 attempts.</p>
+      <button id="restartBtn" class="game__button">New Game</button>
+    </header>
+
+    <section class="board" id="board"></section>
   </main>
 </body>
 </html>
